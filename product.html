@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Product - UrbanWear</title>
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<header id="header">
+
+    <a href="index.html" class="logo">
+        Urban<span>Wear</span>
+    </a>
+
+    <nav>
+
+        <ul id="navbar">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+            <li>
+                <a href="cart.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+    <div id="mobile">
+        <i id="bar" class="fa-solid fa-bars"></i>
+    </div>
+
+</header>
+
+
+<section id="product-details" class="section-p1">
+
+    <div class="single-product-image">
+
+        <img id="main-product-image"
+            src="product1.jpg"
+            alt="Product">
+
+    </div>
+
+
+    <div class="single-product-details">
+
+        <p>UrbanWear Collection</p>
+
+        <h1>Classic Cotton T-Shirt</h1>
+
+        <h2>$39.99</h2>
+
+        <select id="size">
+
+            <option>Select Size</option>
+            <option>Small</option>
+            <option>Medium</option>
+            <option>Large</option>
+            <option>XL</option>
+
+        </select>
+
+
+        <input
+            id="product-quantity"
+            type="number"
+            value="1"
+            min="1">
+
+
+        <button
+            class="primary-btn"
+            onclick="addProductFromPage()">
+
+            Add To Cart
+
+        </button>
+
+
+        <h4>Product Details</h4>
+
+        <p>
+            Designed for everyday comfort, this premium
+            cotton t-shirt features a modern fit and
+            high-quality fabric.
+        </p>
+
+        <p>
+            Perfect for casual outfits, weekends and
+            everyday streetwear.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section-p1">
+
+    <div class="section-title">
+
+        <p>YOU MAY ALSO LIKE</p>
+
+        <h2>Related Products</h2>
+
+    </div>
+
+
+    <div class="product-container">
+
+        <div class="product">
+
+            <img src="product2.jpg">
+
+            <div class="product-info">
+
+                <span>UrbanWear</span>
+
+                <h5>Denim Jacket</h5>
+
+                <div class="stars">★★★★★</div>
+
+                <h4>$89.99</h4>
+
+            </div>
+
+            <button class="cart-btn"
+                onclick="addToCart('Denim Jacket',89.99,'product2.jpg')">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+            </button>
+
+        </div>
+
+
+        <div class="product">
+
+            <img src="product3.jpg">
+
+            <div class="product-info">
+
+                <span>UrbanWear</span>
+
+                <h5>Premium Hoodie</h5>
+
+                <div class="stars">★★★★★</div>
+
+                <h4>$64.99</h4>
+
+            </div>
+
+            <button class="cart-btn"
+                onclick="addToCart('Premium Hoodie',64.99,'product3.jpg')">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer class="section-p1">
+
+    <div class="footer-col">
+
+        <h2 class="footer-logo">
+            Urban<span>Wear</span>
+        </h2>
+
+        <p>Premium fashion for modern lifestyles.</p>
+
+    </div>
+
+    <div class="footer-col">
+
+        <h4>Navigation</h4>
+
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="blog.html">Blog</a>
+
+    </div>
+
+    <div class="copyright">
+
+        <p>© 2026 UrbanWear</p>
+
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
